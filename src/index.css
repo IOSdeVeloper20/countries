@@ -2,15 +2,40 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 body {
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 code {
   font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --background-color: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+  --element-color: hsl(0, 0%, 100%);
+
+  [data-theme="dark"] {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+    --element-color: hsl(209, 23%, 22%);
+  }
+}
+
+.text-switcher {
+  color: var(--text-color) !important;
+  transition: all 0.3s, color 0.3s;
+}
+
+.background-switcher {
+  background-color: var(--element-color) !important;
+  transition: all 0.3s, color 0.3s;
 }

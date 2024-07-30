@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ data }) => {
   return (
-    <div className="rounded overflow-hidden flex flex-col bg-light-element m-4 w-full max-w-[250px] text-xs shadow-lg transition-transform transform hover:scale-105">
+    <div className="rounded overflow-hidden flex flex-col m-4 w-full max-w-[250px] text-xs shadow-lg transition-transform transform background-switcher hover:scale-105">
       <img 
         src={data.flags.png} 
         alt={`${data.name.common} flag`} 

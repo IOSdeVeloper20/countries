@@ -25,7 +25,7 @@ function App() {
   console.log("filtered", filteredData);
 
   return (
-    <div className="App bg-light-background min-h-screen">
+    <div className="App min-h-screen">
       <APIRequest setData={setApiData} setLoading={setLoading} />
       <Navbar />
 

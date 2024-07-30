@@ -15,15 +15,15 @@ const Searchbar = ({ setSearch }) => {
 
   return (
     <div
-      className="flex items-center shadow p-3 text-xs bg-light-element w-1/2"
+      className="flex items-center shadow p-3 text-xs w-1/2 background-switcher"
       onClick={handleClick}>
-      <FontAwesomeIcon icon={faSearch} className="pe-2  text-light-text" />
+      <FontAwesomeIcon icon={faSearch} className="pe-2" />
       <input
         ref={inputRef}
         type="text"
         placeholder="Search for a country..."
         onChange={handleChange}
-        className="text-light-text placeholder:text-light-text outline-none w-full"
+        className="background-switcher placeholder: w-full outline-none"
       />
     </div>
   );

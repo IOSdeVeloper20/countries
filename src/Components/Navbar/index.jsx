@@ -1,15 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import ThemeButton from "../ThemeButton";
+
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between shadow p-4 bg-white">
+    <div className="flex justify-between shadow p-4 background-switcher">
       <h1 className="font-extrabold">Where in the World?</h1>
-      <button className="font-light">
-        <FontAwesomeIcon icon={faMoon} className="pe-2"/>
-        Dark Mode
-      </button>
+      <ThemeButton />
     </div>
   );
 };
